@@ -1,0 +1,76 @@
+body,ul,li,a{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: gray;
+}
+/* 此处设置图片的样式 */
+.box{
+    position: relative;
+    margin: 100px auto;
+    width: 520px;
+    height: 280px;
+    
+    overflow: hidden;
+}
+.imgBox{
+    position: absolute;
+    left: -520px;
+    width: 3640px;
+    height: 280px;
+    font-size: 0px;
+    
+}
+.imgBox img{
+    width: 520px;
+    height: 280px;
+}
+/* 设置小圆点的样式 */
+.list{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-size: 0px;
+    background-color:gray;
+    border-radius: 7px;
+    margin-left:-35px; 
+}
+.list li{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 3px; 
+    background-color: white;
+    cursor: pointer;
+}
+.list li.active{
+    background-color: orange;
+}
+/* 设置前后按钮 */
+.btn{
+    position: absolute;
+    top: 50%;
+    font-size: 26px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: -20px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background: gray;
+    display: none;
+}
+.box:hover .btn{
+    display: inline-block;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
